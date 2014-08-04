@@ -4,8 +4,6 @@ Java8 introduces a lot of new features, incluidng the most exciting one, lambda.
 
 # Creating an Object With Initiation block
 
-Please follow the steps below
-
 	Course course = Builder.of(new Course(), (c) -> {
         c.setName("Funtional Language");
         c.setRating(95);
