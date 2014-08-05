@@ -5,21 +5,21 @@ Java8 introduces a lot of new features, incluidng the most exciting one, lambda.
 # Creating an Object With Initiation block
 
 	Course course = Builder.of(new Course(), (c) -> {
-        c.setName("Funtional Language");
+        c.setName("Functional Language");
         c.setRating(95);
     }).get();
 
 # Building an Object With Fluent Style.
 
 	Course course = Builder.of(new Course())
-        .set(Course::setName, "Functionl Language")
+        .set(Course::setName, "Functional Language")
         .set(Course::setRating, 95)
         .get();
 	
 # Nested Initiation 
 
 	Course course = Builder.of(new Course())
-        .set(Course::setName, "Functionl Language")
+        .set(Course::setName, "Functional Language")
         .set(Course::setRating, 95)
         .set(Course::setTeacher, new User(), (teacher, builder)-> {
             teacher.setUserId(1);
@@ -48,7 +48,7 @@ Java8 introduces a lot of new features, incluidng the most exciting one, lambda.
 # Initiating a Map Member
 
 	Course course = Builder.of(new Course())
-        .set(Course::setName, "Functionl Language")
+        .set(Course::setName, "Functional Language")
         .setMap(Course::setMeta, new HashMap<>(), (meta, mapBuilder) -> {
             mapBuilder
             .put("foo", "bar")
