@@ -2,7 +2,7 @@
 Java8 introduces a lot of new features, incluidng the most exciting one, lambda. In this project, i try to implement a generic builder by Monad pattern. However, after implementing, i found monad pattern is not quite suitable for builder. Anyway, I gave up the map and flatMap in monad while i use nested initiation instead.
 
 
-# Creating an Object With Initiation block
+# Creating an Object With Initialization block
 
 	Course course = Builder.of(new Course(), (c) -> {
         c.setName("Functional Language");
@@ -16,7 +16,7 @@ Java8 introduces a lot of new features, incluidng the most exciting one, lambda.
         .set(Course::setRating, 95)
         .get();
 	
-# Nested Initiation 
+# Nested Initialization 
 
 	Course course = Builder.of(new Course())
         .set(Course::setName, "Functional Language")
