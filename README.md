@@ -1,4 +1,4 @@
-# Intrdocution
+# Introdution
 Java8 introduces a lot of new features, incluidng the most exciting one, lambda. In this project, i try to implement a generic builder by Monad pattern. However, after implementing, i found monad pattern is not quite suitable for builder. Anyway, I gave up the map and flatMap in monad while i use nested initiation instead.
 
 
